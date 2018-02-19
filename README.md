@@ -9,3 +9,4 @@
 2. Paleta de colores
 
 ![Diseño / Paleta](assets/img/Paleta-colores/paleta-colores.png)
+
