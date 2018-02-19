@@ -4,54 +4,316 @@
 	<meta charset="UTF-8">
 	<!-- responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>VANE'S PORTAFOLIO</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VANESSA MARTÍNEZ | PORTAFOLIO</title>
 	<!-- Link google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<!-- link para normalize -->
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<!-- link bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- Enlace fontawesome -->
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<!-- estilos css -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
 	<header>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header ">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 navbar-right">
+		      <ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+		        <li><a href="#about">Sobre Mi</a></li>
+		        <li><a href="#skills">Habilidades</a></li>
+		        <li><a href="#projects">Proyecto</a></li>
+		        <li><a href="#contact">Contacto</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		          <ul class="dropdown-menu">
+		            <li><a href="#home">Home</a></li>
+		            <li><a href="#about">Sobre Mi</a></li>
+		            <li><a href="#skills">Habilidades</a></li>
+		            <li><a href="#projects">Proyectos</a></li>
+		            <li><a href="#contact">Contacto</a></li>
+		          </ul>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<!-- seccion home -->
+	<section id="home">
 		<div class="container-fluid">
-
-			<div class="row container_logo_menu">
-				<!-- logo -->
-				<div class="logo col-xs-12 col-md-6">
-					<a href="#"> logo??</a>
-				</div>
-				<!-- menu -->
-				<div class="menu col-xs-12 col-md-6">
-					<a href="#">Home</a>
-					<a href="#">About Me</a>
-					<a href="#">Skills</a>
-					<a href="#">Projects</a>
-					<a href="#">Contact</a>
-				</div>
-			</div> <!-- fin fila logo menu -->
-
-			<!-- contenedor con el tecto -->
-			<div class="row texts" id="home">
-				<div class="col-md-12">
-					<h1 class="name">Vanessa</h1>
-					<h2 class="profetion">I'm a Front-End Coder in progress at Laboratoria</h2>
-					<div class="container-btn">
-						<a href="#">View my work <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div>
+						<h2 id="presentation">Hola! Soy Vanessa</h2>
 					</div>
-				</div> <!-- fin col -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- seccion sobre mi-->
+	<section id="about">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>SOBRE MI</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 text-center">
+					<img id="my-photo" src="assets/img/imagen-300x300.png" alt="mi-futura-foto">
+				</div>
+				<div class="col-sm-12 col-md-6 texto-sobre-mi">
+					<p>Hola! Me llamo Vanessa Martínez Navarro. Soy Junior Front-End developer formada en Laboratoria. Trabajo en base a la metodología ágil, ayudando así a que los proyectos finalicen de forma eficaz y rápida.</p>
+					<br>
+					<p>En mi tiempo libre me gusta leer, escuchar música, ver anime y regalonear a mis mascotas.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- seccion skills -->
+	<section id="skills">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>MIS HABILIDADES</h2>
+				</div>
 			</div> <!-- fin fila -->
 
-		</div> <!-- fin container del header -->
-	</header>
+			<div class="row">
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- html5 -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="fab fa-html5"></i>
+					</div>
+					<div>
+						<h4>HTML 5</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- css3 -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="fab fa-css3-alt "></i>
+					</div>
+					<div>
+						<h4>CSS 3</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- javascript -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="fab fa-js-square"></i>
+					</div>
+					<div>
+						<h4>JAVASCRIPT</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- jquery -->
+					<div style="font-size:8em; color:#8db600">
+					  
+					</div>
+					<div>
+						<h4>JQUERY</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
 
-	<!-- seccion sobre mi-->
-	<section class="about">
-		
+			<div class="row">
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- node.js -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="fab fa-node-js"></i>
+					</div>
+					<div>
+						<h4>NODE JS</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- bootstrap -->
+					<div style="font-size:8em; color:#8db600">
+					  
+					</div>
+					<div>
+						<h4>BOOTSTRAP</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<!-- sass -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="fab fa-sass"></i>
+					</div>
+					<div>
+						<h4>SASS</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<div style="font-size:8em; color:#8db600">
+					  <i class="fab fa-github"></i>
+					</div>
+					<div>
+						<h4>GITHUB</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</section>
+	<!-- seccion projects -->
+	<section id="projects">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>MIS PROYECTOS</h2>
+				</div>
+			</div>
+			<div class="row">
+						<!-- num1-->
+			  <div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt="..">
+			      <div class="caption">
+			        <h3>Nombre proyecto</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- num2 -->
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <div class="caption">
+			        <h3>Nombre proyecto</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- num3 -->
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <div class="caption">
+			        <h3>Nombre proyecto</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  		<!-- num1-->
+			  <div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <div class="caption">
+			        <h3>Nombre proyecto</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- num2 -->
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <div class="caption">
+			        <h3>Nombre proyecto</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- num3 -->
+				<div class="col-sm-6 col-md-4">
+			    <div class="thumbnail">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <div class="caption">
+			        <h3>Nombre proyecto</h3>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- seccion contact -->
+	<section id="contact" >
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>CONTACTO</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 text-center">
+					<h3>Tienes alguna pregunta? Contáctame!</h3>
+					<form id="contact-form">
+	          <fieldset>
+	            <input type="text" id="name" name="name" class="input-block-level" placeholder="Nombre">
+	            <br>
+	            <input type="text" id="email" name="email" class="input-block-level" placeholder="E-mail">
+	            <br>
+	            <textarea rows="8" id="description" name="description" class="input-block-level" placeholder="Tu Mensaje"></textarea>
+	            <br>
+	            <button type="submit" class="btn  pull-right">Enviar</button>
+	          </fieldset>
+       		</form>
+				</div>
+				<!-- redes sociales -->
+				<div class="col-sm-12 col-md-6 text-center">
+					<h3>Mis redes sociales</h3>
+					<div style="font-size:6em; color:#8db600">
+					  <a class="social"  href="https://github.com/vanemarnava"><i class="fab fa-github"></i></a>
+					</div>
+					<div style="font-size:6em; color:#8db600">
+					  <a class="social" href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>Desarrollado por Vanessa Martnez N. / Laboratoria 2018 </p>
+				</div>
+			</div>	
+		</div>
+	</footer>
 	
+	<!-- scripts -->
+	<!-- enlace JQuery -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<!-- enlace bootstrap js-->
+	<script src="assets/js/bootstrap.min.js" ></script>
+	<!-- enlace app.js -->
+	<script type="text/javascript" src="assets/js/app.js" ></script>
 </body>
 </html>
