@@ -14,17 +14,21 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- Enlace fontawesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- Enlace konpa -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<!-- estilos css -->
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<!-- enlace animate.css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
 
 	<header>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" role='navigation'>
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header ">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#acolapsar" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
@@ -32,7 +36,7 @@
 		      </button>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 navbar-right">
+		    <div class="collapse navbar-collapse navbar-right" id="acolapsar">
 		      <ul class="nav navbar-nav navbar-right">
 						<li><a href="#home">Home</a></li>
 		        <li><a href="#about">Sobre Mi</a></li>
@@ -55,15 +59,17 @@
 	</header>
 	<!-- seccion home -->
 	<section id="home">
-		<div class="container-fluid">
+		<div class="container-fluid width">
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div>
-						<h2 id="presentation">Hola! Soy Vanessa</h2>
+						<h2 class="animated zoomIn" id="presentation">Hola! Soy Vanessa</h2>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- particulas -->
+		<div id="particles-js"></div>
 	</section>
 	<!-- seccion sobre mi-->
 	<section id="about">
@@ -94,7 +100,7 @@
 				</div>
 			</div> <!-- fin fila -->
 
-			<div class="row">
+			<div class="row up">
 				<div class="col-sm-6 col-md-3 text-center">
 					<!-- html5 -->
 					<div style="font-size:8em; color:#8db600">
@@ -102,7 +108,6 @@
 					</div>
 					<div>
 						<h4>HTML 5</h4>
-						<p></p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center">
@@ -112,7 +117,6 @@
 					</div>
 					<div>
 						<h4>CSS 3</h4>
-						<p></p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center">
@@ -122,50 +126,45 @@
 					</div>
 					<div>
 						<h4>JAVASCRIPT</h4>
-						<p></p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center">
 					<!-- jquery -->
 					<div style="font-size:8em; color:#8db600">
-					  
+					  <i class="devicon-jquery-plain-wordmark"></i>
 					</div>
 					<div>
 						<h4>JQUERY</h4>
-						<p></p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-sm-6 col-md-3 text-center">
+				<div class="col-sm-6 col-md-3 text-center down">
 					<!-- node.js -->
 					<div style="font-size:8em; color:#8db600">
 					  <i class="fab fa-node-js"></i>
 					</div>
 					<div>
 						<h4>NODE JS</h4>
-						<p></p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center">
 					<!-- bootstrap -->
 					<div style="font-size:8em; color:#8db600">
-					  
+					  <i class="devicon-bootstrap-plain"></i>
 					</div>
 					<div>
 						<h4>BOOTSTRAP</h4>
-						<p></p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center">
 					<!-- sass -->
 					<div style="font-size:8em; color:#8db600">
-					  <i class="fab fa-sass"></i>
+					  <i class="devicon-react-original"></i>
 					</div>
 					<div>
-						<h4>SASS</h4>
-						<p></p>
+						<h4>REACT</h4>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center">
@@ -174,13 +173,13 @@
 					</div>
 					<div>
 						<h4>GITHUB</h4>
-						<p></p>
 					</div>
 				</div>
 			</div>
 
 		</div>
 	</section>
+
 	<!-- seccion projects -->
 	<section id="projects">
 		<div class="container-fluid">
@@ -193,44 +192,44 @@
 						<!-- num1-->
 			  <div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt="..">
+			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/EASY-VRECO.jpg" alt="easy-vreco">
 			      <div class="caption">
-			        <h3>Nombre proyecto</h3>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			        <h3>Easy-Vreco</h3>
+			        <p>Easy-Vreco permite geolocalizarte con precisión en el lugar en que te encuentras ahora, usando el boton 'encuentrame'.</p>
+			        <p><a href="https://vanemarnava.github.io/EASY-VRECO/" target="_blank" class="btn" role="button">Ver</a></p>
 			      </div>
 			    </div>
 			  </div>
 			  <!-- num2 -->
 				<div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/insta-collage.jpg" alt="insta">
 			      <div class="caption">
-			        <h3>Nombre proyecto</h3>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			        <h3>Insta-college</h3>
+			        <p></p>
+			        <p><a href="https://carol-solivos.github.io/insta-collage/" target="_blank" class="btn" role="button">Ver</a></p>
 			      </div>
 			    </div>
 			  </div>
 			  <!-- num3 -->
 				<div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/swapiApp.jpg" alt="starWars">
 			      <div class="caption">
-			        <h3>Nombre proyecto</h3>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			        <h3>SwapiApp</h3>
+			        <p>Aplicación que al presionar al personaje se mostrará los datos relevantes de los personajes de la saga Star Wars</p>
+			        <p><a href="https://carol-solivos.github.io/swapiApp/" target="_blank" class="btn" role="button">Ver</a></p>
 			      </div>
 			    </div>
 			  </div>
 			  		<!-- num1-->
 			  <div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <img class="photo-project"  style="height: 230px; width: 400px" src="assets/img/works/nasa-magazine.jpg" alt="nasa">
 			      <div class="caption">
-			        <h3>Nombre proyecto</h3>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			        <h3>Nasa Magazine</h3>
+			        <p>Proyecto que con la ayuda de la api de la Nasa muestra las imagenes que desde 1995 han publicado diariamente.</p>
+			        <p><a href="https://carol-solivos.github.io/nasa-magazine/" target="_blank" class="btn" role="button">Ver</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -248,11 +247,11 @@
 			  <!-- num3 -->
 				<div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
+			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/Trivia.jpg" alt="trivia">
 			      <div class="caption">
-			        <h3>Nombre proyecto</h3>
+			        <h3>Trivia DB</h3>
 			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			        <p><a href="https://vanemarnava.github.io/Trivia/" target="_blank" class="btn" role="button">Ver</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -269,33 +268,37 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-6 text-center">
+				<div class="col-sm-12 col-md-12 text-center">
 					<h3>Tienes alguna pregunta? Contáctame!</h3>
-					<form id="contact-form">
-	          <fieldset>
-	            <input type="text" id="name" name="name" class="input-block-level" placeholder="Nombre">
-	            <br>
-	            <input type="text" id="email" name="email" class="input-block-level" placeholder="E-mail">
-	            <br>
-	            <textarea rows="8" id="description" name="description" class="input-block-level" placeholder="Tu Mensaje"></textarea>
-	            <br>
-	            <button type="submit" class="btn  pull-right">Enviar</button>
-	          </fieldset>
-       		</form>
 				</div>
-				<!-- redes sociales -->
-				<div class="col-sm-12 col-md-6 text-center">
-					<h3>Mis redes sociales</h3>
+			</div>	
+			<div class="row">
+				<div class="col-sm-12 col-md-4 text-center">
 					<div style="font-size:6em; color:#8db600">
-					  <a class="social"  href="https://github.com/vanemarnava"><i class="fab fa-github"></i></a>
+					  <a class="social" target="_blank" href="https://github.com/vanemarnava"><i class="fab fa-github"></i></a>
 					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 text-center">
 					<div style="font-size:6em; color:#8db600">
-					  <a class="social" href="#"><i class="fab fa-linkedin"></i></a>
+					  <a class="social" target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 text-center">
+					<div style="font-size:6em; color:#8db600">
+					  <a class="social" target="_blank" href="mailto:nechan10@gmail.com"><i class="fas fa-envelope"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<div class="container-fluid arrow">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<a id="arrowup" href="#home"><i class="fas fa-angle-double-up" style="font-size:6em; color:#8db600"></i></a>
+			</div>
+		</div>
+	</div>
 
 	<!-- footer -->
 	<footer id="footer">
@@ -315,5 +318,9 @@
 	<script src="assets/js/bootstrap.min.js" ></script>
 	<!-- enlace app.js -->
 	<script type="text/javascript" src="assets/js/app.js" ></script>
+	<!-- enlace particulas -->
+	<script src="assets/js/particles.js"></script>
+	<script src="assets/js/app.js"></script>
+
 </body>
 </html>
