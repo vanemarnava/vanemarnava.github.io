@@ -148,6 +148,11 @@ p{
 	margin-bottom: 4em;
 }
 
+.up2{
+	float: right;
+	display: inline-block;
+}
+
 /*ESTILO DE SECCION PROYECTOS*/
 #projects{
 	width: 100%;
