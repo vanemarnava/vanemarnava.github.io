@@ -10,7 +10,6 @@
 
 *{
 	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: bold;
 }
 
 h2{
@@ -40,6 +39,7 @@ p{
 	width: 100%;
 	z-index: 10;
 	border: none;
+	font-weight: bold;
 }
 
 /*colores letras navbar */
@@ -106,6 +106,22 @@ p{
 }
 
 
+/*ESTILOS FLECHA*/
+/*Estilo contenedor flecha arriba*/
+.arrow{
+	display: inline-block;
+	position: fixed;
+	margin-top: 87vh;
+	margin-left: 94%;
+	z-index: 8;
+}
+@media (min-width: 320px) and (max-width: 667px) {
+	.arrow{
+		margin-left: 85%;
+	}
+}
+
+
 /*ESTILOS SECCION ABOUT*/
 /*Estilo seccion*/
 #about{
@@ -118,6 +134,11 @@ p{
 	display: flex; /*habilitaflexbox*/
 	justify-content: center;
 }
+@media (min-width: 320px) and (max-width: 1000px) {
+	#about{
+	height: 120vh;
+	}
+}
 
 /*estilo de my-photo*/
 #my-photo{
@@ -127,8 +148,7 @@ p{
 
 /*Estilos texto sobre mi*/
 .texto-sobre-mi{
-	padding-right: 3.1em;
-	padding-top: 2em;
+	padding-right: 2em;
 	margin-bottom: 9em;
 }
 
@@ -137,41 +157,143 @@ p{
 #skills{
 	width: 100%;
 	height: auto;
-	padding: 2em;
+	padding: 3em;
 	color: #847372;
 	/*flexbox*/
 	/*display: flex;*/ /*habilitaflexbox*/
+	font-weight: bold;
 }
 
-
-.up, .down{
-	margin-bottom: 4em;
-}
-
-.up2{
-	float: right;
-	display: inline-block;
+/*Estilo row*/
+.up{
+	margin-bottom: 2em;
 }
 
 /*ESTILO DE SECCION PROYECTOS*/
+/*estilo seccion general*/
 #projects{
 	width: 100%;
 	height: auto;
-	padding: 4em;
+	padding: 2em;
 	color: #DCF7AF;
 	background-color: #8db600;
 }
 
-/*Estilo thumbnail */
-.thumbnail{
+/*estilo contenedor*/
+.contenedor-img {
+	width: 380px;
+	height: 290px;
+	margin: 1em;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	background: #fff;
 	background-color: #e3f2ab;
 }
 
+/*estilo estela con informacion proyecto*/
+.contenedor-img .mascara,.contenedor-img .contenido {
+	width: 380px;
+	height: 290px;
+	padding-top: 40px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0
+}
+
+/*estilo imagen*/
+.contenedor-img img {
+	display: block;
+	position: relative;
+}
+
+/*estilo nombre proyecto*/
+.contenedor-img h2 {
+	text-transform: uppercase;
+	color: #DCF7AF;
+	text-align: center;
+	position: relative;
+	font-size: 1.7em;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.9);
+	margin: 20px 0 0 0
+}
+
+/*estilo descripcion proyecto*/
+.contenedor-img p {
+	font-size: 1.2em;
+	position: relative;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.contenedor-img a.link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	background: #222;
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #000;
+}
+
+.contenedor-img a.link:hover {
+	box-shadow: 0 0 5px #000;
+}
+
+/*animacion efect hover en proyectos*/
+.project1 img {
+	transition: all 0.2s linear;
+}
+.project1 .mascara {
+	opacity: 0;
+	background-color: rgba(46,157,120, 0.7);
+	transition: all 0.3s ease-in-out;
+}
+.project1 h2 {
+	transform: translateX(-200px);/*Desplazamos a la izquierda*/
+	opacity: 0;
+	transition: all 0.7s ease-in-out;
+}
+.project1 p {
+	transform: translateX(200px);/*Desplazamos a la derecha*/
+	opacity: 0;
+	transition: all 0.4s linear;
+}
+.project1 a.link{
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: translateY(100px)/*Desplazamos para abajo*/
+}
+.project1:hover img {
+	transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
+}
+.project1:hover .mascara {
+	opacity: 1;
+}
+.project1:hover h2,
+.project1:hover p,
+.project1:hover a.link {
+	opacity: 1;
+	transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+.project1:hover p {
+	transition-delay: 0.1s;
+}
+.project1:hover a.link {
+	transition-delay: 0.2s; /*Aplicamos un pequeño retardo para que se muestre al final*/
+	transform: translateY(0px);
+}
+/*fin animacion*/
+
 /*estilos imagenes proyecto*/
 .photo-project{
-	width: 300px;
-	height: 400px;
-	margin-top: 1em;
+	width: 380px;
+	height: 290px;
 }
 
 /*ESTILO SECCION CONTACTO*/
@@ -186,6 +308,7 @@ p{
 #contact-form{
 	padding: 1em;
 	margin-bottom: 5em;
+	font-weight: bold;
 }
 
 /*Estilo mis redes sociales*/
@@ -210,7 +333,7 @@ p{
 /*Estilo mis redes sociales hover*/
 .social:hover{
 	color: #847372;
-	  -webkit-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
@@ -219,11 +342,10 @@ p{
  height: 2em;
 }*/
 
-
-/*estilo flecha arriba*/
-.arrow{
-	margin-bottom: 2em;
+#titleCV{
+	margin-top: 2em;
 }
+
 
 /*ESTILO SECCION FOOTER*/
 #footer{

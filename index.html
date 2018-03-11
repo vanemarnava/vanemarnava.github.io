@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<!-- responsive -->
@@ -57,6 +57,14 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</header>
+	<!-- flecha -->
+	<div class="container-fluid arrow">
+		<div class="row">
+			<div class="col-md-12 text-center theArrow">
+				<a id="arrowup" href="#home"><i id="iconArrow" class="fas fa-angle-double-up" style="font-size: 4em; color: #c1d7d7"></i></a>
+			</div>
+		</div>
+	</div>
 	<!-- seccion home -->
 	<section id="home">
 		<div class="container-fluid width">
@@ -80,10 +88,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-6 text-center">
-					<img id="my-photo" src="assets/img/imagen-300x300.png" alt="mi-futura-foto">
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 text-center">
+					<img class="block" id="my-photo" src="assets/img/imagen-300x300.png" alt="mi-futura-foto">
 				</div>
-				<div class="col-sm-12 col-md-6 texto-sobre-mi">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 texto-sobre-mi block" data-rotate-y="270deg" data-move-x="150%">
 					<p>Hola! Me llamo Vanessa Martínez Navarro. Soy Junior Front-End developer formada en Laboratoria. Trabajo en base a la metodología ágil, ayudando así a que los proyectos finalicen de forma eficaz y rápida.</p>
 					<br>
 					<p>En mi tiempo libre me gusta leer, escuchar música, ver anime y regalonear a mis mascotas.</p>
@@ -100,17 +108,18 @@
 				</div>
 			</div> <!-- fin fila -->
 
+			<!-- primera row con skills -->
 			<div class="row up">
-				<div class="col-sm-6 col-md-3 text-center">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- html5 -->
-					<div style="font-size:8em; color:#8db600">
+					<div style="font-size:8em; color:#8db600" class="box">
 					  <i class="fab fa-html5"></i>
-					</div>
+					</div> 
 					<div>
 						<h4>HTML 5</h4>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- css3 -->
 					<div style="font-size:8em; color:#8db600">
 					  <i class="fab fa-css3-alt "></i>
@@ -119,7 +128,7 @@
 						<h4>CSS 3</h4>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- javascript -->
 					<div style="font-size:8em; color:#8db600">
 					  <i class="fab fa-js-square"></i>
@@ -128,7 +137,7 @@
 						<h4>JAVASCRIPT</h4>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- jquery -->
 					<div style="font-size:8em; color:#8db600">
 					  <i class="devicon-jquery-plain-wordmark"></i>
@@ -137,48 +146,86 @@
 						<h4>JQUERY</h4>
 					</div>
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-6 col-md-3 text-center down">
-					<!-- node.js -->
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- css3 -->
 					<div style="font-size:8em; color:#8db600">
-					  <i class="fab fa-node-js"></i>
+					  <i class="devicon-trello-plain-wordmark"></i>
 					</div>
 					<div>
-						<h4>NODE JS</h4>
+						<h4>TRELLO</h4>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center">
-					<!-- bootstrap -->
-					<div style="font-size:8em; color:#8db600">
-					  <i class="devicon-bootstrap-plain"></i>
-					</div>
-					<div>
-						<h4>BOOTSTRAP</h4>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 text-center">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- sass -->
 					<div style="font-size:8em; color:#8db600">
-					  <i class="devicon-react-original"></i>
+					  <i class="devicon-sass-original"></i>
 					</div>
 					<div>
-						<h4>REACT</h4>
+						<h4>SASS</h4>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center">
-					<div style="font-size:8em; color:#8db600">
-					  <i class="fab fa-github"></i>
-					</div>
-					<div>
-						<h4>GITHUB</h4>
-					</div>
-				</div>
-			</div>
+			</div> <!-- fin primera row skills -->
 
-		</div>
-	</section>
+			<!-- segunda row de skills -->
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- node.js -->
+          <div style="font-size:8em; color:#8db600">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div>
+            <h4>NODE JS</h4>
+          </div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- bootstrap -->
+          <div style="font-size:8em; color:#8db600">
+            <i class="devicon-bootstrap-plain"></i>
+          </div>
+          <div>
+            <h4>BOOTSTRAP</h4>
+          </div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- react -->
+          <div style="font-size:8em; color:#8db600">
+            <i class="devicon-react-original"></i>
+          </div>
+          <div>
+            <h4>REACT</h4>
+          </div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- github -->
+					<div style="font-size:8em; color:#8db600">
+            <i class="fab fa-github"></i>
+          </div>
+          <div>
+            <h4>GITHUB</h4>
+          </div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- git -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="devicon-git-plain"></i>
+					</div>
+					<div>
+						<h4>GIT</h4>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<!-- babel -->
+					<div style="font-size:8em; color:#8db600">
+					  <i class="devicon-babel-plain"></i>
+					</div>
+					<div>
+						<h4>BABEL</h4>
+					</div>
+				</div>
+			</div> <!-- fin primera row skills -->	
+
+		</div> <!-- fin container-fluid -->
+ 	</section>
 
 	<!-- seccion projects -->
 	<section id="projects">
@@ -188,75 +235,87 @@
 					<h2>MIS PROYECTOS</h2>
 				</div>
 			</div>
+			<!-- primera row de proyectos -->
 			<div class="row">
-						<!-- num1-->
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/EASY-VRECO.jpg" alt="easy-vreco">
-			      <div class="caption">
-			        <h3>Easy-Vreco</h3>
+				<!-- proyecto num1-->
+			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			    <div class="contenedor-img project1">
+			      <img class="photo-project" src="assets/img/works/EASY-VRECO.jpg" alt="easy-vreco">
+			      <div class="mascara">
+			        <h2>Easy-Vreco</h2>
 			        <p>Easy-Vreco permite geolocalizarte con precisión en el lugar en que te encuentras ahora, usando el boton 'encuentrame'.</p>
-			        <p><a href="https://vanemarnava.github.io/EASY-VRECO/" target="_blank" class="btn" role="button">Ver</a></p>
+			        <p><a href="https://github.com/vanemarnava/EASY-VRECO" target="_blank" class="btn" role="button">Ver Repo</a>
+			        <a href="https://vanemarnava.github.io/EASY-VRECO/" target="_blank" class="btn" role="button">Ver Demo</a></p>
 			      </div>
 			    </div>
-			  </div>
-			  <!-- num2 -->
-				<div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/insta-collage.jpg" alt="insta">
-			      <div class="caption">
-			        <h3>Insta-college</h3>
-			        <p></p>
-			        <p><a href="https://carol-solivos.github.io/insta-collage/" target="_blank" class="btn" role="button">Ver</a></p>
+			  </div> <!-- fin col -->
+				<!-- proyecto num2-->
+			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			    <div class="contenedor-img project1">
+			      <img class="photo-project" src="assets/img/works/insta-collage.jpg" alt="insta">
+			      <div class="mascara">
+			        <h2>Insta-college</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et nam quos eum, magni quisquam nostrum quo numquam</p>
+			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
+			        <a href="https://carol-solivos.github.io/insta-collage/" target="_blank" class="btn" role="button">Ver Demo</a></p>
 			      </div>
 			    </div>
-			  </div>
-			  <!-- num3 -->
-				<div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/swapiApp.jpg" alt="starWars">
-			      <div class="caption">
-			        <h3>SwapiApp</h3>
+			  </div> <!-- fin col -->
+				<!-- proyecto num3-->
+			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			    <div class="contenedor-img project1">
+			      <img class="photo-project" src="assets/img/works/swapiApp.jpg" alt="starWars">
+			      <div class="mascara">
+			        <h2>SwapiApp</h2>
 			        <p>Aplicación que al presionar al personaje se mostrará los datos relevantes de los personajes de la saga Star Wars</p>
-			        <p><a href="https://carol-solivos.github.io/swapiApp/" target="_blank" class="btn" role="button">Ver</a></p>
+			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
+			        <a href="https://carol-solivos.github.io/swapiApp/" target="_blank" class="btn" role="button">Ver Demo</a></p>
 			      </div>
 			    </div>
-			  </div>
-			  		<!-- num1-->
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <img class="photo-project"  style="height: 230px; width: 400px" src="assets/img/works/nasa-magazine.jpg" alt="nasa">
-			      <div class="caption">
-			        <h3>Nasa Magazine</h3>
+			  </div> <!-- fin col -->
+			</div> 
+			<!-- fin primera row con proyectos -->
+			<!-- segunda fila con proyectos -->
+			<div class="row">
+				<!-- proyecto num4-->
+			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			    <div class="contenedor-img project1">
+			      <img class="photo-project" src="assets/img/works/nasa-magazine.jpg" alt="nasa">
+			      <div class="mascara">
+			        <h2>Nasa Magazine</h2>
 			        <p>Proyecto que con la ayuda de la api de la Nasa muestra las imagenes que desde 1995 han publicado diariamente.</p>
-			        <p><a href="https://carol-solivos.github.io/nasa-magazine/" target="_blank" class="btn" role="button">Ver</a></p>
+			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
+			        <a href="https://carol-solivos.github.io/nasa-magazine/" target="_blank" class="btn" role="button">Ver Demo</a></p>
 			      </div>
 			    </div>
-			  </div>
-			  <!-- num2 -->
-				<div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt="...">
-			      <div class="caption">
-			        <h3>Nombre proyecto</h3>
+			  </div> <!-- fin col -->
+				<!-- proyecto num5-->
+			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			    <div class="contenedor-img project1">
+			      <img class="photo-project" src="assets/img/ejemplo.png" alt=".....">
+			      <div class="mascara">
+			        <h2>Nombre proyecto</h2>
 			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" class="btn" role="button">Ver</a></p>
+			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
+			        <a href="#" target="_blank" class="btn" role="button">Ver Demo</a></p>
 			      </div>
 			    </div>
-			  </div>
-			  <!-- num3 -->
-				<div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
-			      <img class="photo-project" style="height: 230px; width: 400px" src="assets/img/works/Trivia.jpg" alt="trivia">
-			      <div class="caption">
-			        <h3>Trivia DB</h3>
+			  </div> <!-- fin col -->
+				<!-- proyecto num6-->
+			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			    <div class="contenedor-img project1">
+			      <img class="photo-project" src="assets/img/works/Trivia.jpg" alt="trivia">
+			      <div class="mascara">
+			        <h2>Trivia DB</h2>
 			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="https://vanemarnava.github.io/Trivia/" target="_blank" class="btn" role="button">Ver</a></p>
+			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
+			        <a href="https://vanemarnava.github.io/Trivia/" target="_blank" class="btn" role="button">Ver Demo</a></p>
 			      </div>
 			    </div>
-			  </div>
-			</div>
-		</div>
+			  </div> 
+			</div> 
+			<!-- fin segunda row con proyectos -->
+		</div> <!-- fin container-fluid -->
 	</section>
 
 	<!-- seccion contact -->
@@ -268,37 +327,44 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-12 text-center">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center">
 					<h3>Tienes alguna pregunta? Contáctame!</h3>
 				</div>
 			</div>	
+
+			
 			<div class="row">
-				<div class="col-sm-12 col-md-4 text-center">
-					<div style="font-size:6em; color:#8db600">
+				<div class="col-sm-12 col-md-4 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<div style="font-size:5.5em; color:#8db600">
 					  <a class="social" target="_blank" href="https://github.com/vanemarnava"><i class="fab fa-github"></i></a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-4 text-center">
-					<div style="font-size:6em; color:#8db600">
+				<div class="col-sm-12 col-md-4 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<div style="font-size:5.5em; color:#8db600">
 					  <a class="social" target="_blank" href="https://www.linkedin.com/in/vanessa-martinez-a09abb11a/?trk=nav_responsive_tab_profile"><i class="fab fa-linkedin"></i></a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-4 text-center">
-					<div style="font-size:6em; color:#8db600">
+				<div class="col-sm-12 col-md-4 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<div style="font-size:5.5em; color:#8db600">
 					  <a class="social" target="_blank" href="mailto:nechan10@gmail.com"><i class="fas fa-envelope"></i></a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-
-	<div class="container-fluid arrow">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<a id="arrowup" href="#home"><i class="fas fa-angle-double-up" style="font-size:6em; color:#8db600"></i></a>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 text-center">
+					<h3 id="titleCV">Descarga mi C.V</h3>
+				</div>
 			</div>
-		</div>
-	</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
+					<div style="font-size:5em; color:#8db600">
+					  <a class="social" target="_blank" href="assets/docs/C.V. Vanessa Martínez - Laboratoria - 1era ver..pdf"><i class="fas fa-download"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- fin container fluid -->
+	</section>
 
 	<!-- footer -->
 	<footer id="footer">
@@ -316,10 +382,12 @@
 	<script src="assets/js/jquery-3.2.1.min.js"></script>
 	<!-- enlace bootstrap js-->
 	<script src="assets/js/bootstrap.min.js" ></script>
-	<!-- enlace app.js -->
-	<script type="text/javascript" src="assets/js/app.js" ></script>
 	<!-- enlace particulas -->
-	<script src="assets/js/particles.js"></script>
-	<script src="assets/js/app.js"></script>
+	<script src="assets/js/lib/particles.js"></script>
+	<!-- enlace app.js -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<!-- smoove -->
+	<script src="assets/js/lib/jquery.smoove.min.js" ></script>
+  <script>$('.block').smoove({offset:'40%'});</script>
 </body>
 </html>
