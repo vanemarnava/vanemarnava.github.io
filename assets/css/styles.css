@@ -115,11 +115,6 @@ p{
 	margin-left: 94%;
 	z-index: 8;
 }
-@media (min-width: 320px) and (max-width: 667px) {
-	.arrow{
-		margin-left: 85%;
-	}
-}
 
 
 /*ESTILOS SECCION ABOUT*/
@@ -133,11 +128,6 @@ p{
 	/*flexbox*/
 	display: flex; /*habilitaflexbox*/
 	justify-content: center;
-}
-@media (min-width: 10px) and (max-width: 1000px) {
-	#about {
-	height: 130vh;
-	}
 }
 
 /*estilo de my-photo*/
@@ -358,4 +348,23 @@ p{
 	padding: 2em;
 	background-color: #8db600;
 	color: #DCF7AF;
+}
+
+@media (min-width: 10px) and (max-width: 1000px) {
+	
+	.arrow{
+		margin-left: 85%;
+	}
+
+	#about {
+		height: 130vh;
+	}
+
+	#skills {
+		height: 210vh;
+	}
+
+	#contact{
+		height: 135vh;
+	}
 }
