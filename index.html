@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>VANESSA MARTÍNEZ | PORTAFOLIO</title>
 	<!-- Link google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Amita:|Nanum+Brush+Script|Shadows+Into+Light" rel="stylesheet">
 	<!-- link para normalize -->
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<!-- link bootstrap -->
@@ -21,10 +22,10 @@
 	<!-- enlace animate.css -->
 	<link rel="stylesheet" href="assets/css/animate.css">
 </head>
-<body>
 
+<body data-spy="scroll" data-target="#navBarmain">
 	<header>
-		<nav class="navbar navbar-default" role='navigation'>
+		<nav id="navBarmain" class="navbar navbar-default" role='navigation'>
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header ">
@@ -36,22 +37,22 @@
 		      </button>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse navbar-right" id="acolapsar">
-		      <ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">Home</a></li>
-		        <li><a href="#about">Sobre Mi</a></li>
-		        <li><a href="#skills">Habilidades</a></li>
-		        <li><a href="#projects">Proyecto</a></li>
-		        <li><a href="#contact">Contacto</a></li>
+		    <div class="collapse navbar-collapse navbar-right text-center" id="acolapsar">
+		      <ul class="nav navbar-nav navbar-right" role="tablist">
+						<li><a class="smooth-scroll" href="#home">Home</a></li>
+		        <li><a class="smooth-scroll" href="#about">Sobre Mi</a></li>
+		        <li><a class="smooth-scroll" href="#skills">Habilidades</a></li>
+		        <li><a class="smooth-scroll" href="#projects">Proyectos</a></li>
+		        <li><a class="smooth-scroll" href="#contact">Contacto</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		          <ul class="dropdown-menu">
-		            <li><a href="#home">Home</a></li>
-		            <li><a href="#about">Sobre Mi</a></li>
-		            <li><a href="#skills">Habilidades</a></li>
-		            <li><a href="#projects">Proyectos</a></li>
-		            <li><a href="#contact">Contacto</a></li>
-		          </ul>
+		        <ul class="dropdown-menu">
+	            <li class="active smooth-scroll"><a href="#home">Home</a></li>
+	            <li><a class="smooth-scroll" href="#about">Sobre Mi</a></li>
+	            <li><a class="smooth-scroll" href="#skills">Habilidades</a></li>
+	            <li><a class="smooth-scroll" href="#projects">Proyectos</a></li>
+	            <li><a class="smooth-scroll" href="#contact">Contacto</a></li>
+	          </ul>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -61,7 +62,7 @@
 	<div class="container-fluid arrow">
 		<div class="row">
 			<div class="col-md-12 text-center theArrow">
-				<a id="arrowup" href="#home"><i id="iconArrow" class="fas fa-angle-double-up" style="font-size: 4em; color: #c1d7d7"></i></a>
+				<a class="smooth-scroll" id="arrowup" href="#home"><i id="iconArrow" class="fas fa-angle-double-up" style="font-size: 4em; color: #c1d7d7"></i></a>
 			</div>
 		</div>
 	</div>
@@ -72,9 +73,9 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div>
-						<h2 class="animated zoomIn" id="presentation">Hola! Soy Vanessa</h2>
+						<h2 class='angrytext' id="presentation">Hola!! Soy Vanessa</h2>
 					</div>
-				</div>
+				</div>   
 			</div>
 		</div>
 		<!-- particulas -->
@@ -113,7 +114,7 @@
 			<div class="row up">
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- html5 -->
-					<div style="font-size:7em; color:#8db600" class="box">
+					<div style="font-size:7em; color:#5d8f7a" class="box">
 					  <i class="fab fa-html5"></i>
 					</div> 
 					<div>
@@ -122,7 +123,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- css3 -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="fab fa-css3-alt "></i>
 					</div>
 					<div>
@@ -131,7 +132,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- javascript -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="fab fa-js-square"></i>
 					</div>
 					<div>
@@ -140,7 +141,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- jquery -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="devicon-jquery-plain-wordmark"></i>
 					</div>
 					<div>
@@ -149,7 +150,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- css3 -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="devicon-trello-plain-wordmark"></i>
 					</div>
 					<div>
@@ -158,7 +159,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- sass -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="devicon-sass-original"></i>
 					</div>
 					<div>
@@ -171,7 +172,7 @@
 			<div class="row">
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- node.js -->
-          <div style="font-size:7em; color:#8db600">
+          <div style="font-size:7em; color:#5d8f7a">
             <i class="fab fa-node-js"></i>
           </div>
           <div>
@@ -180,7 +181,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- bootstrap -->
-          <div style="font-size:7em; color:#8db600">
+          <div style="font-size:7em; color:#5d8f7a">
             <i class="devicon-bootstrap-plain"></i>
           </div>
           <div>
@@ -189,7 +190,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- react -->
-          <div style="font-size:7em; color:#8db600">
+          <div style="font-size:7em; color:#5d8f7a">
             <i class="devicon-react-original"></i>
           </div>
           <div>
@@ -198,7 +199,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- github -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
             <i class="fab fa-github"></i>
           </div>
           <div>
@@ -207,7 +208,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- git -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="devicon-git-plain"></i>
 					</div>
 					<div>
@@ -216,7 +217,7 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
 					<!-- babel -->
-					<div style="font-size:7em; color:#8db600">
+					<div style="font-size:7em; color:#5d8f7a">
 					  <i class="devicon-babel-plain"></i>
 					</div>
 					<div>
@@ -239,7 +240,7 @@
 			<!-- primera row de proyectos -->
 			<div class="row">
 				<!-- proyecto num1-->
-			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			    <div class="contenedor-img project1">
 			      <img class="photo-project" src="assets/img/works/EASY-VRECO.jpg" alt="easy-vreco">
 			      <div class="mascara">
@@ -251,19 +252,7 @@
 			    </div>
 			  </div> <!-- fin col -->
 				<!-- proyecto num2-->
-			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
-			    <div class="contenedor-img project1">
-			      <img class="photo-project" src="assets/img/works/insta-collage.jpg" alt="insta">
-			      <div class="mascara">
-			        <h2>Insta-college</h2>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et nam quos eum, magni quisquam nostrum quo numquam</p>
-			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
-			        <a href="https://carol-solivos.github.io/insta-collage/" target="_blank" class="btn" role="button">Ver Demo</a></p>
-			      </div>
-			    </div>
-			  </div> <!-- fin col -->
-				<!-- proyecto num3-->
-			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			    <div class="contenedor-img project1">
 			      <img class="photo-project" src="assets/img/works/swapiApp.jpg" alt="starWars">
 			      <div class="mascara">
@@ -278,8 +267,8 @@
 			<!-- fin primera row con proyectos -->
 			<!-- segunda fila con proyectos -->
 			<div class="row">
-				<!-- proyecto num4-->
-			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<!-- proyecto num3-->
+			  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			    <div class="contenedor-img project1">
 			      <img class="photo-project" src="assets/img/works/nasa-magazine.jpg" alt="nasa">
 			      <div class="mascara">
@@ -290,20 +279,8 @@
 			      </div>
 			    </div>
 			  </div> <!-- fin col -->
-				<!-- proyecto num5-->
-			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
-			    <div class="contenedor-img project1">
-			      <img class="photo-project" src="assets/img/ejemplo.png" alt=".....">
-			      <div class="mascara">
-			        <h2>Nombre proyecto</h2>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			        <p><a href="#" target="_blank" class="btn" role="button">Ver Repo</a>
-			        <a href="#" target="_blank" class="btn" role="button">Ver Demo</a></p>
-			      </div>
-			    </div>
-			  </div> <!-- fin col -->
-				<!-- proyecto num6-->
-			  <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<!-- proyecto num4-->
+			  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			    <div class="contenedor-img project1">
 			      <img class="photo-project" src="assets/img/works/Trivia.jpg" alt="trivia">
 			      <div class="mascara">
@@ -334,18 +311,18 @@
 			</div>				
 			<div class="row">
 				<div class="col-sm-12 col-md-4 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
-					<div style="font-size:5.5em; color:#8db600">
+					<div style="font-size:5em">
 					  <a class="social" target="_blank" href="https://github.com/vanemarnava"><i class="fab fa-github"></i></a>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-4 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
-					<div style="font-size:5.5em; color:#8db600">
+					<div style="font-size:5em">
 					  <a class="social" target="_blank" href="https://www.linkedin.com/in/vanessa-martinez-a09abb11a/?trk=nav_responsive_tab_profile"><i class="fab fa-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-4 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
-					<div style="font-size:5.5em; color:#8db600">
-					  <a class="social" target="_blank" href="mailto:nechan10@gmail.com"><i class="fas fa-envelope"></i></a>
+					<div style="font-size:5em">
+					  <a class="social" target="_blank" href="mailto:vanessa.mart.nava10@gmail.com"><i class="fas fa-envelope"></i></a>
 					</div>
 				</div>
 			</div>
@@ -356,8 +333,8 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12 text-center block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">
-					<div style="font-size:5em; color:#8db600">
-					  <a class="social" target="_blank" href="assets/docs/C.V. Vanessa Martínez - Laboratoria - 1era ver..pdf"><i class="fas fa-download"></i></a>
+					<div>
+					  <a class="social" target="_blank" href="assets/docs/C.V. Laboratoria.pdf"><i style="font-size:4.5em" class="fas fa-download"></i></a>
 					</div>
 				</div>
 			</div>
@@ -370,7 +347,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<p>Desarrollado por Vanessa Martnez N. / Laboratoria 2018 </p>
+					<p>Desarrollado por Vanessa Martínez -2018- </p>
 				</div>
 			</div>	
 		</div>
@@ -383,10 +360,12 @@
 	<script src="assets/js/bootstrap.min.js" ></script>
 	<!-- enlace particulas -->
 	<script src="assets/js/lib/particles.js"></script>
+	<!-- enlace smoove -->
+	<script src="assets/js/lib/jquery.smoove.min.js" ></script>
 	<!-- enlace app.js -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
-	<!-- smoove -->
-	<script src="assets/js/lib/jquery.smoove.min.js" ></script>
-  <script>$('.block').smoove({offset:'40%'});</script>
+	<!-- enlace main.js -->
+	<script src="assets/js/main.js" ></script>
+	
 </body>
 </html>
