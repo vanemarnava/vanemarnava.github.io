@@ -396,19 +396,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008180', end
 @media (min-width: 10px) and (max-width: 1000px) {
 	
 	.arrow{
-		margin-left: 85%;
+		margin-left: 81%;
 	}
 
 	#about {
-		height: 130vh;
+		height: auto;
+		text-align: center;
 	}
 
 	#skills {
-		height: 210vh;
+		height: auto;
 	}
 	
 	#projects{
 		padding: 0 2em 4em 0em;
+	}
+
+	p{
+		font-size: 1em;
 	}
 
 	.contenedor-img{
@@ -417,7 +422,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008180', end
 	}
 
 	#contact{
-		margin-bottom: 11em;
+		/*margin-bottom: 5em;*/
+		height: auto;
+	}
+
+	#footer{
+		margin-top: 12em;
 	}
 }
 
