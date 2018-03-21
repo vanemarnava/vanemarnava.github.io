@@ -401,7 +401,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008180', end
 
 	#about {
 		height: auto;
-		text-align: center;
+		/*text-align: center;*/
 	}
 
 	#skills {
